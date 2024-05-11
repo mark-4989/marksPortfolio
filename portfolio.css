@@ -1,0 +1,20 @@
+#first {
+    padding-left: 150px;
+    color: white;
+}
+
+#list {
+    padding-left: 300px;
+}
+
+#list li {
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#list li a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
