@@ -44,9 +44,9 @@
 #second {}
 
 #card,
+#row,
 #second,
-#area,
-h1 {
+#area h1 {
     font-size: 5.1rem;
     line-height: 1;
     font-weight: 700;
@@ -56,10 +56,9 @@ h1 {
 #card,
 #row,
 #second,
-#area,
-h3 {
-    /* position: relative;
-    width: 32.8rem; */
+#area h3 {
+    position: relative;
+    /* width: 32.8rem; */
     font-size: 3.1rem;
     font-weight: 700;
     /* color: transparent; */
