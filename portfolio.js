@@ -13,6 +13,12 @@ window.onscroll = () => {
         else {
             sec.classList.remove("show-animate");
         }
+        //footer animation
+        let footer = document.querySelector("footer");
+        footer.classList.toggle(
+            "show-animate",
+            this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight
+        );
     });
 };
 var $cursor = $(".cursor"),

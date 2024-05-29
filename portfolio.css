@@ -2,13 +2,19 @@
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
-    /* background-color: black; */
-    /* color: white; */
+    /* background: #081b29; */
+    color: white;
 }
 
 :root {
+    --bg-color: #081b29;
+    --sec-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
+}
+
+body {
+    background: #081b29;
 }
 
 html {
@@ -24,6 +30,7 @@ html {
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
+    background: #081b29;
 }
 
 #first .container-fluid .navbar-brand {
@@ -64,6 +71,7 @@ html {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    background: #081b29;
 }
 
 .firsts .pic {
@@ -156,6 +164,10 @@ html {
 
 /* about section */
 
+.about {
+    background-color: #112e42;
+}
+
 .about h2 {
     position: relative;
     font-size: 3rem;
@@ -195,14 +207,16 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
+    /* right: 50%; */
+    /* bottom: 50%; */
     transform: translate(-50%, -50%) rotate(0);
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    border-left: 2px solid var(--main-color);
-    border-right: 2px solid var(--main-color);
+    border-top: 2px solid var(--sec-bg-color);
+    border-bottom: 2px solid var(--sec-bg-color);
+    border-left: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
     background: transparent;
     animation: aboutSpinner 8s linear infinite;
 }
@@ -241,6 +255,7 @@ html {
     min-height: auto;
     padding-bottom: 5rem;
     margin-top: 4rem;
+    background: #081b29;
 }
 
 .education .heading {
@@ -427,6 +442,8 @@ html {
 
 /* projects part */
 
+
+/* 
 .project-title h1 {
     font-weight: 300;
 }
@@ -482,16 +499,58 @@ html {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
+} */
 
 
 /* services section */
 
 .service {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    min-height: auto;
+    padding-bottom: 5rem;
+    margin-top: 4rem;
+    background: #112e42;
+}
+
+.service h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.service .fifth {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2rem;
+}
+
+.service .fifth .card {
+    margin-left: 1rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    height: 20rem;
+    z-index: 1;
+    overflow: hidden;
+    background: #081b29;
+}
+
+.service .fifth .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: 0.5sec;
+}
+
+.service .fifth .card:hover::before {
+    width: 100%;
 }
 
 
@@ -503,6 +562,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
+    background: #081b29;
 }
 
 .foot p {
@@ -549,7 +609,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #081b29;
     z-index: 98;
 }
 
@@ -563,7 +623,7 @@ html {
 
 .animate .scroll {
     transition: 1s ease;
-    transition-delay: calc(0.3s / var(--i));
+    transition-delay: calc(0.4s / var(--i));
     animation: none;
 }
 
@@ -573,7 +633,8 @@ html {
 
 .about .show-animate .animate .scroll,
 .education .show-animate .animate .scroll,
-.colum .box .show-animate .animate .scroll {
+.colum .box .show-animate .animate .scroll,
+.service .show-animate .animate .scroll {
     width: 0;
     transition-delay: calc(0.3s * var(--i));
 }
@@ -585,8 +646,16 @@ html {
 }
 
 
-/* @media() {
-  html {
-    font-size: 50%;
-  }
-} */
+/* breakpoints */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 10rem 4% 2rem;
+    }
+}
