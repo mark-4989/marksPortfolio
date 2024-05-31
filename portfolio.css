@@ -267,6 +267,10 @@ html {
     align-items: center;
 }
 
+.education .heading span {
+    color: #00abf0;
+}
+
 .education .edu-row {
     display: flex;
     flex-direction: row;
@@ -554,6 +558,18 @@ html {
 }
 
 
+/* contact section */
+
+.contact {
+    align-items: center;
+    text-align: center;
+}
+
+.contact h2 span {
+    color: #00abf0;
+}
+
+
 /* footer section */
 
 .footer {
@@ -562,7 +578,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: #081b29;
+    background: #112e42;
 }
 
 .foot p {
