@@ -2,19 +2,12 @@
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
-    /* background: #081b29; */
+     background: black; 
     color: white;
 }
 
-:root {
-    --bg-color: #081b29;
-    --sec-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-}
-
 body {
-    background: #081b29;
+    background: black;
 }
 
 html {
@@ -30,12 +23,13 @@ html {
     color: white;
     font-family: sans-serif;
     font-weight: bolder;
-    background: #081b29;
+    background: black;
 }
 
 #first .container-fluid .navbar-brand {
     font-size: 2rem;
     position: relative;
+    color: white;
 }
 
 #first #navbarNav {
@@ -46,7 +40,7 @@ html {
     padding-left: 300px;
 }
 
-#list li {
+#list li a {
     padding-left: 100px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -71,7 +65,7 @@ html {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    background: #081b29;
+    background: black;
 }
 
 .firsts .pic {
@@ -101,14 +95,11 @@ html {
 .firsts .once .soft h3 {
     font-size: 3.2rem;
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: 0.7px blue;
-    background-image: linear-gradient(var(--main-color), var(--main-color));
+    color: white;
+    -webkit-text-stroke: 0.7px gold;
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    
     background-position: -33rem 0;
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
 }
 
 .firsts .once .soft h3::before {
@@ -118,54 +109,24 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    border-radius: 0.2px solid var(--main-color);
     z-index: -1;
-    /* animation: 6s; */
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
 }
 
 
 /* keyframe animation */
 
-@keyframes homeBgText {
-    0%,
-    10%,
-    100% {
-        background-position: -33rem 0;
-    }
-    65%,
-    85% {
-        background-position: 0 0;
-    }
-}
 
 
 /* curuso */
 
-@keyframes homeCursorText {
-    0%,
-    10%,
-    100% {
-        width: 0;
-    }
-    65%,
-    78%,
-    85% {
-        width: 100%;
-        opacity: 1;
-    }
-    75%,
-    81% {
-        opacity: 0;
-    }
-}
 
 
 /* about section */
 
 .about {
-    background-color: #112e42;
+    background-color:black;
+    border: 3px solid rgb(138, 111, 111);
+    border-radius: 2px;
 }
 
 .about h2 {
@@ -177,7 +138,7 @@ html {
 }
 
 .about h2 span {
-    color: #00abf0;
+    /* color: #00abf0; */
 }
 
 .cards {
@@ -191,7 +152,7 @@ html {
     position: relative;
     width: 25rem;
     height: 25rem;
-    border-radius: 50%;
+    border-radius: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,8 +160,8 @@ html {
 
 .cards .picture img {
     width: 90%;
-    border-radius: 50%;
-    border: 2px solid blue;
+    /* border-radius: 70%; */
+    /* border: 2px solid white; */
 }
 
 .cards .picture .circle {
@@ -255,7 +216,7 @@ html {
     min-height: auto;
     padding-bottom: 5rem;
     margin-top: 4rem;
-    background: #081b29;
+    background: BLACK ;
 }
 
 .education .heading {
@@ -268,7 +229,7 @@ html {
 }
 
 .education .heading span {
-    color: #00abf0;
+    color: white;
 }
 
 .education .edu-row {
@@ -292,7 +253,7 @@ html {
 
 .colum .box {
     position: relative;
-    border-left: 0.2rem solid var(--main-color);
+    border-left: 0.2rem solid white;
     margin-left: 3rem;
 }
 
@@ -308,7 +269,7 @@ html {
     left: -1.1rem;
     width: 2rem;
     height: 2rem;
-    background: var(--main-color);
+    background: black;
     border-radius: 50%;
 }
 
@@ -316,7 +277,7 @@ html {
     position: relative;
     padding: 1.5rem;
     width: 80%;
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid rgb(182, 147, 147);
     border-radius: 0.6rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -340,7 +301,7 @@ html {
 
 .content .inside .year {
     font-size: 1.5rem;
-    color: var(--main-color);
+    color: white;
     padding-bottom: 0.5rem;
 }
 
@@ -374,7 +335,7 @@ html {
 
 .skill-box .skil-content {
     position: relative;
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid rgb(114, 89, 89);
     border-radius: 0.6rem;
     padding: 0.5rem 1.5rem;
     z-index: 1;
@@ -409,13 +370,13 @@ html {
 }
 
 .skil-content .pro h3 span {
-    color: var(--main-color);
+    color: white;
 }
 
 .skil-content .pro .bar {
     height: 2.5rem;
     border-radius: 0.6rem;
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid rgb(112, 95, 95);
     padding: 0.5rem;
     margin: 1rem 0;
 }
@@ -424,11 +385,11 @@ html {
     display: block;
     height: 100%;
     border-radius: 0.3rem;
-    background: var(--main-color);
+    background: white;
 }
 
 .coll:nth-child(1) .skil-content .pro:nth-child(1) .bar span {
-    width: 50%;
+    width: 85%;
 }
 
 .coll:nth-child(1) .skil-content .pro:nth-child(2) .bar span {
@@ -516,7 +477,7 @@ html {
     min-height: auto;
     padding-bottom: 5rem;
     margin-top: 4rem;
-    background: #112e42;
+    background: black;
 }
 
 .service h2 {
@@ -535,12 +496,14 @@ html {
 
 .service .fifth .card {
     margin-left: 1rem;
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid rgb(155, 130, 130);
     border-radius: 0.6rem;
     height: 20rem;
     z-index: 1;
     overflow: hidden;
-    background: #081b29;
+    /* background:black; */
+    background-color: rgba(139, 174, 15, 0.473);
+    backdrop-filter: blur(50px);
 }
 
 .service .fifth .card::before {
@@ -550,7 +513,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background: red;
+    background: linear-gradient(22,56,25);
     z-index: -1;
     transition: 0.5sec;
 }
@@ -565,39 +528,107 @@ html {
 .contact {
     align-items: center;
     text-align: center;
-}
-
-.contact h2 span {
-    color: #00abf0;
+    margin-bottom: 3rem;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    background: black:
 }
 
 .contact p {
     font-size: 1.5rem;
 }
 
-.phone {
+.contact .phone {
     /* float: left; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin: 10px;
+    padding: 20px;
+    
 }
 
-.phone .num {
+.contact .phone .num  {
     /* float: left; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 40%;
+    padding: 40px;
+    background: white;
+    box-shadow: inset;
+    /* float: left; */
+    /* margin-left: 400px; */
+    align-items: center;
+    margin-bottom: 50px;
+    position: absolute;
+    margin-left: 800px;
+}
+
+form h2 {
+    font-size: 3opx;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+}
+
+.tform {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.tform input,
+.tform textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 3px solid blue;
+    outline: none;
+    resize: none;
+    background-color: white;
+}
+/* .tform input span{
+    background-color: white;
+} */
+.input a {
+    width: 100vw;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    background-size: 400%;
+    border-radius: 30px;
+}
+
+.input a:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
 
 
 /* footer section */
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: #112e42;
-}
 
-.foot p {
-    font-size: 1.6rem;
-}
 
 .icon a {
     position: relative;
@@ -639,7 +670,7 @@ html {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: black;
     z-index: 98;
 }
 
